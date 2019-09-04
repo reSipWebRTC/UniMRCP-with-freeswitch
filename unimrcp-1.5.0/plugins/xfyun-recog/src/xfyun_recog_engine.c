@@ -150,7 +150,7 @@ MRCP_PLUGIN_LOG_SOURCE_IMPLEMENT(RECOG_PLUGIN,"RECOG-PLUGIN")
 static apt_bool_t xfyun_login()
 {
 	int			ret						=	MSP_SUCCESS;
-	const char* login_params			=	"appid = 5d636077, work_dir = ."; // 登录参数，appid与msc库绑定,请勿随意改动
+	const char* login_params			=	"appid = ****, work_dir = ."; // 登录参数，appid与msc库绑定,请勿随意改动
 
 	/* 用户登录 */
 	ret = MSPLogin(NULL, NULL, login_params); //第一个参数是用户名，第二个参数是密码，均传NULL即可，第三个参数是登录参数	
