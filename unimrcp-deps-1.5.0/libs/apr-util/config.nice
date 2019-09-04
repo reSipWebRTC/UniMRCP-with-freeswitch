@@ -1,0 +1,8 @@
+#! /bin/sh
+#
+# Created by configure
+
+"./configure" \
+"--with-apr=/opt/MRCP-Plugin-Demo/unimrcp-deps-1.5.0/libs/apr" \
+"--prefix=/usr/local/apr" \
+"$@"
