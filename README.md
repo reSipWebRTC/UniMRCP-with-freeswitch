@@ -486,13 +486,7 @@ https://www.cnblogs.com/damizhou/p/11323394.html
 
 #### 验证
 
-下载测试工具：Adore SIP Client
-
-在App Store（其他手机系统请到对应应用市场）中搜索“Adore SIP Client”，并下载。
-
-![image](https://github.com/wangkaisine/mrcp-plugin-with-freeswitch/blob/master/image/adoresipclient.png)
-
-其中SIP IP是FreeSWITCH服务开启的主机IP与port（默认为5060），USER NAME如上所述可选1000-1019，PASSWORD默认为1234。点击"Login"（请确保手机连接的网络与FreeSWITCH在同一个子网内），并拨打5001进行语言测试验证（如果您是从第一步跳转过来的，请拨打5000）。
+请自己使用软SIP电话测试。
 
 
 
