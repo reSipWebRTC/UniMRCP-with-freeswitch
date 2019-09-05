@@ -270,6 +270,8 @@ xfyun-recog修改如下：
 <engine id="Demo-Synth-1" name="demorecog" enable="false"/>
 <engine id="XFyun-Synth-1" name="xfyunsynth" enable="true"/>
 ```
+修改 unimrcp-1.5.0/plugins/xfyun-recog/src/xfyun_recog_engine.c 函数 static apt_bool_t xfyun_login()里面的 
+const char* login_params = "appid = ********, work_dir = ."; //appid为自己注册的讯飞平台的appid
 
 同时，如果您已经准备好将UniMRCP Server和FreeSWITCH对接，您应该在conf/unimrcpserver.xml中配置好server的ip地址，即当前unimrcp安装的子网访问地址。
 
