@@ -78,17 +78,17 @@ FreeSWITCH默认配置1000-1019（20个）用户，默认密码1234，您可以�
 
 本次示例的UniMRCP Server在CentOS 7中进行源码编译安装，感谢由Github用户cotinyang提供的已经写好的集成讯飞SDK的UniMRCP Server源码。
 
-1.下载 [UniMRCP Server Plugin Demo 源码](https://github.com/cotinyang/MRCP-Plugin-Demo)：
+1.下载 [UniMRCP-with-freeswitch 源码](https://github.com/reSipWebRTC/UniMRCP-with-freeswitch)：
 
 ```shell
 cd /opt
-git clone https://github.com/cotinyang/MRCP-Plugin-Demo.git MRCP-Plugin-Demo
+git clone https://github.com/reSipWebRTC/UniMRCP-with-freeswitch.git UniMRCP-with-freeswitch 
 ```
 
 2.编译准备环境
 
 ```shell
-cd MRCP-Plugin-Demo/unimrcp-deps-1.5.0
+cd UniMRCP-with-freeswitch/unimrcp-deps-1.5.0
 ## 编译可能出现错误, 注释掉：107 ~ 109, getopt的set，其中存在不识别的option
 ## 编译生成apr, apr-util, target path: ./libs
 ./build-dep-libs.sh
