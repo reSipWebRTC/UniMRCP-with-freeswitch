@@ -16,61 +16,7 @@
 
 ### 第一步 安装编译FreeSWITCH
 
-本次示例的FreeSWITCH在MacOS High Sierra 10.13.4系统版本中进行源码编译安装，未使用软件包安装，具体安装步骤可见 [官网安装介绍](https://freeswitch.org/confluence/display/FREESWITCH/macOS+macFI+Installation) ，其他平台如Linux（Ubuntu、CentOS）应均能安装成功。
-
-以下给出源码编译安装的步骤：
-
-
-1.下载 [FreeSWITCH源码](https://freeswitch.org/stash/scm/fs/freeswitch.git)：
-
-```shell
-cd /usr/local/src
-git clone -b v1.6 https://freeswitch.org/stash/scm/fs/freeswitch.git freeswitch
-```
-
-2.安装依赖库
-
-```shell
-brew install autoconf
-brew install automake
-brew install libtool
-brew install pkg-config
-brew install speexdsp
-brew install speex
-brew install libldns-dev
-brew install OpenSSL
-brew install pcre
-brew install pkgconfig sqlite3
-brew install lua
-brew install opus
-brew install libsndfile
-```
-
->注：其他系统平台请自行确认依赖库内容，可能的搜索结果：[Ubuntu/CentOS FreeSWITCH 安装依赖](https://blog.csdn.net/u012121105/article/details/74238595)。 在ubuntu下：[libtool not found](https://blog.csdn.net/aphero/article/details/78309817)。
-
-3.编译安装
-
-```shell
-cd freeswitch/
-# 先执行 bootstrap.sh，生成configure文件
-./bootstrap.sh 
-./configure --prefix=/usr/local/freeswitch
-make
-make install
-make cd-sounds-install
-make cd-moh-install
-```
-
-4.运行
-
-```shell
-cd /usr/local/freeswitch/bin
-./freeswitch
-```
-
-即可启动应用。
-
->注：安装过程中可能出现的问题 [configure中的错误](https://blog.csdn.net/singleroot/article/details/52298620)。
+https://freeswitch.org/confluence/display/FREESWITCH/Debian+9+Stretch
 
 FreeSWITCH默认配置1000-1019（20个）用户，默认密码1234，您可以提前跳转到“第四步 测试与验证” 的验证步骤，登录并拨打5000，可以听到默认IVR的示例语音菜单指引。
 
