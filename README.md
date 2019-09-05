@@ -1,8 +1,8 @@
-# mrcp-plugin-with-freeswitch 
+# UniMRCP-with-freeswitch
 
->github非每天登录，如有问题，请联系 wangkaisine@gmail.com，空闲时间回复，谢谢！
+>github非每天登录，如有问题，请加群:谢谢！
 
-这是我的第一个Github工程，特别感谢 [Cotin网站](https://cotin.tech) 《构建简单的智能客服系统》[（一）](https://cotin.tech/AI/FreeswitchSetting/)、 [（二）](https://cotin.tech/AI/UniMRCPASR/) 、[（三）](https://cotin.tech/AI/UniMRCPTTS/) 对于构建过程的帮助，您在阅读本教程前，可以先行阅读这三篇文章，本教程基于此调整了构建顺序，给出更多的操作细节，错误处理以及其它构建描述。
+特别感谢【wangkaisine】(https://github.com/wangkaisine/mrcp-plugin-with-freeswitch) [Cotin网站](https://cotin.tech) 《构建简单的智能客服系统》[（一）](https://cotin.tech/AI/FreeswitchSetting/)、 [（二）](https://cotin.tech/AI/UniMRCPASR/) 、[（三）](https://cotin.tech/AI/UniMRCPTTS/) 对于构建过程的帮助，您在阅读本教程前，可以先行阅读这三篇文章，本教程基于此调整了构建顺序，给出更多的操作细节，错误处理以及其它构建描述。
 
 ## 主要目的 
 
