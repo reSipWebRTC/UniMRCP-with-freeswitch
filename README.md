@@ -158,7 +158,7 @@ usage:
 
 2.plugin编写与编译
 
-本步骤将告诉您如何编写unimrcp的插件代码，即现在MRCP-Plugin-Demo/unimrcp-1.5.0/plugins文件夹下xfyun_recog、xfyun_xynth文件夹下的文件及其相关配置是如何得到的，如果您当前还不关注此细节，可以跳过本步骤至第四步。
+本步骤将告诉您如何编写unimrcp的插件代码，即现在UniMRCP-with-freeswitch/unimrcp-1.5.0/plugins文件夹下xfyun_recog、xfyun_xynth文件夹下的文件及其相关配置是如何得到的，如果您当前还不关注此细节，可以跳过本步骤至第四步。
 
 实际上，上述UniMRCP-with-freeswitch代码是在  [Unimrcp官网](http://www.unimrcp.org) 下载 [Unimrcp 1.5.0](http://www.unimrcp.org/project/release-view/unimrcp-1-5-0/unimrcp-1-5-0-zip) 和 [Unimrcp Deps 1.5.0](http://www.unimrcp.org/project/release-view/unimrcp-deps-1-5-0/unimrcp-deps-1-5-0-zip) 并在此基础上添加的plugin代码。
 
