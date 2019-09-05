@@ -93,7 +93,7 @@ cd UniMRCP-with-freeswitch/unimrcp-deps-1.5.0
 ## 编译生成apr, apr-util, target path: ./libs
 ./build-dep-libs.sh
 ```
->注：1.过程中需要输入两次y，并确认；2.另外，我们为该Demo工程Fork了一个自己维护的工程，地址为https://github.com/wangkaisine/MRCP-Plugin-Demo 您也可以使用这个地址的源码。
+>注：1.过程中需要输入两次y，并确认
 
 3.编译安装unimrcp
 
