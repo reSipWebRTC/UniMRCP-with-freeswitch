@@ -436,7 +436,8 @@ end
 
 #### 验证
 
-请自己使用软SIP电话测试。
+请自己使用软SIP电话比如Linphone测试。
+http://www.linphone.org/sites/default/files/linphone-latest.apk
 
 
 
