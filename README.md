@@ -152,7 +152,7 @@ usage:
 
 点击右侧“SDK下载”，在跳转页面中确认“选择应用”已经选中了您创建的应用，“选择您需要的AI能力”选中上述两项服务，并点击“SDK下载”等待SDK生成与完成下载。
 
-将下载的zip包，解压并替换MRCP-Plugin-Demo/unimrcp-1.5.0/plugins/third-party/xfyun/下的所有文件及文件夹。
+将下载的zip包，解压并替换UniMRCP-with-freeswitch/unimrcp-1.5.0/plugins/third-party/xfyun/下的所有文件及文件夹。
 
 > 注：创建应用页面中的应用平台选择“Linux”。
 
@@ -160,7 +160,7 @@ usage:
 
 本步骤将告诉您如何编写unimrcp的插件代码，即现在MRCP-Plugin-Demo/unimrcp-1.5.0/plugins文件夹下xfyun_recog、xfyun_xynth文件夹下的文件及其相关配置是如何得到的，如果您当前还不关注此细节，可以跳过本步骤至第四步。
 
-实际上，上述MRCP-Plugin-Demo代码是在  [Unimrcp官网](http://www.unimrcp.org) 下载 [Unimrcp 1.5.0](http://www.unimrcp.org/project/release-view/unimrcp-1-5-0/unimrcp-1-5-0-zip) 和 [Unimrcp Deps 1.5.0](http://www.unimrcp.org/project/release-view/unimrcp-deps-1-5-0/unimrcp-deps-1-5-0-zip) 并在此基础上添加的plugin代码。
+实际上，上述UniMRCP-with-freeswitch代码是在  [Unimrcp官网](http://www.unimrcp.org) 下载 [Unimrcp 1.5.0](http://www.unimrcp.org/project/release-view/unimrcp-1-5-0/unimrcp-1-5-0-zip) 和 [Unimrcp Deps 1.5.0](http://www.unimrcp.org/project/release-view/unimrcp-deps-1-5-0/unimrcp-deps-1-5-0-zip) 并在此基础上添加的plugin代码。
 
 首先编辑configure.ac文件，会在后面的Makefile中使用到的宏定义。XFyun recognizer plugin的添加如下：
 
@@ -328,16 +328,12 @@ make mod_unimrcp-install
     <param name="server-ip" value="192.168.1.23"/>
     <!-- MRCP SIP 端口号 -->
     <param name="server-port" value="8060"/>
-    <param name="resource-location" value=""/>
 
     <!-- FreeSWITCH IP、端口以及 SIP 传输方式 -->
     <param name="client-ip" value="192.168.1.24" />
     <param name="client-port" value="5069"/>
     <param name="sip-transport" value="udp"/>
 
-
-    <param name="speechsynth" value="speechsynthesizer"/>
-    <param name="speechrecog" value="speechrecognizer"/>
     <!--param name="rtp-ext-ip" value="auto"/-->
     <param name="rtp-ip" value="192.168.1.24"/>
     <param name="rtp-port-min" value="4000"/>
