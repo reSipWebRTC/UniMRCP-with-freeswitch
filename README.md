@@ -481,7 +481,10 @@ end
 
 >注：lua脚本中，”play_and_detect_speech” 调用了 ASR 服务，”speak” 调用了 TTS 服务。[配置启动中遇到问题](https://www.jianshu.com/p/6aa2140937b2)。
 
-替换unimrcp的VAD模块,参考下面链接，本项目已经替换成webrtc的vad模块，无需再修改。
+替换unimrcp的VAD模块, 
+unimrcp vad 模块voice activity dector一直认为比较粗暴，而且unimrcp的社区也很久没有更新了。使用原始unimrcp如果只是用来做Demo演示，通过手动调整参数，还是可以的。但是距离生产环境，还是有很远的一段路。故可以替换成webrtc的vad模块。
+
+参考下面链接，本项目已经替换成webrtc的vad模块，无需再修改。
 https://www.cnblogs.com/damizhou/p/11323394.html
 
 #### 验证
