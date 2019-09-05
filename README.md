@@ -481,6 +481,8 @@ end
 
 >注：lua脚本中，”play_and_detect_speech” 调用了 ASR 服务，”speak” 调用了 TTS 服务。[配置启动中遇到问题](https://www.jianshu.com/p/6aa2140937b2)。
 
+替换unimrcp的VAD模块,参考下面链接，本项目已经替换成webrtc的vad模块，无需再修改。
+https://www.cnblogs.com/damizhou/p/11323394.html
 
 #### 验证
 
@@ -492,6 +494,8 @@ end
 
 其中SIP IP是FreeSWITCH服务开启的主机IP与port（默认为5060），USER NAME如上所述可选1000-1019，PASSWORD默认为1234。点击"Login"（请确保手机连接的网络与FreeSWITCH在同一个子网内），并拨打5001进行语言测试验证（如果您是从第一步跳转过来的，请拨打5000）。
 
+
+
 ## 其他相关资料
 
 FreeSWITCH主页：https://freeswitch.com/
@@ -501,3 +505,5 @@ Unimrcp主页：http://www.unimrcp.org/
 Apache APR：https://apr.apache.org/
 
 讯飞SDK包导入方式：https://doc.xfyun.cn/msc_linux/SDK%E5%8C%85%E5%AF%BC%E5%85%A5.html
+
+
