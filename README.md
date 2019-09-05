@@ -6,7 +6,7 @@ A demo repository for UniMRCP plugin implementation with iflytek ASR & TTS API
 
 Attention, iflytek SDK do not support concurrent processing. This project just explains the workflow of plugin implementation.
 
-这是我的第一个Github工程，特别感谢 Cotin网站 《构建简单的智能客服系统》（一）、 （二） 、（三） 对于构建过程的帮助，您在阅读本教程前，可以先行阅读这三篇文章，本教程基于此调整了构建顺序，给出更多的操作细节，错误处理以及其它构建描述。
+特别感谢 Cotin网站 《构建简单的智能客服系统》（一）、 （二） 、（三） 对于构建过程的帮助，您在阅读本教程前，可以先行阅读这三篇文章，本教程基于此调整了构建顺序，给出更多的操作细节，错误处理以及其它构建描述。
 
 主要目的
 使用FreeSWITCH接受用户手机呼叫，通过UniMRCP Server集成讯飞开放平台（xfyun）插件将用户语音进行语音识别（ASR），并根据自定义业务逻辑调用语音合成（TTS），构建简单的端到端语音呼叫中心。
