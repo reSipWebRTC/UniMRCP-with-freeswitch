@@ -49,8 +49,8 @@ MPF_DECLARE(mpf_activity_detector_t*) mpf_activity_detector_create(apr_pool_t *p
 {
 	mpf_activity_detector_t *detector = apr_palloc(pool,sizeof(mpf_activity_detector_t));
 	detector->level_threshold = 30; /* 0 .. 255 */
-	detector->speech_timeout = 300; /* 0.3 s */
-	detector->silence_timeout = 300; /* 0.3 s */
+	detector->speech_timeout = 200; /* 0.2 s */
+	detector->silence_timeout = 200; /* 0.2 s */
 	detector->noinput_timeout = 5000; /* 5 s */
 	detector->duration = 0;
 	detector->state = DETECTOR_STATE_INACTIVITY;
@@ -171,7 +171,7 @@ static apr_size_t mpf_activity_detector_level_calculate(const mpf_frame_t *frame
    return nVadRet;
  }
 
- return -1;
+ return 0;
 }
 
 MPF_DECLARE(mpf_detector_event_e) mpf_activity_detector_process(mpf_activity_detector_t *detector, const mpf_frame_t *frame)
