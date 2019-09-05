@@ -16,7 +16,7 @@
 
 ### 第一步 安装编译FreeSWITCH
 
-https://freeswitch.org/confluence/display/FREESWITCH/Debian+9+Stretch
+https://freeswitch.org/confluence/display/FREESWITCH/CentOS+7+and+RHEL+7
 
 FreeSWITCH默认配置1000-1019（20个）用户，默认密码1234，您可以提前跳转到“第四步 测试与验证” 的验证步骤，登录并拨打5000，可以听到默认IVR的示例语音菜单指引。
 
