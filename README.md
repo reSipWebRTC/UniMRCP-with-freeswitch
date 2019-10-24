@@ -224,13 +224,16 @@ const char* login_params = "appid = ********, work_dir = ."; //appid为自己注
 重新编译安装unimrcp（第二步 3）。
 
 当你启动时出现如下问题时：
+>1. Failed to Load DSO: libmsc.so: cannot open shared object file: No such file or directory
+fix:
+   cp -rf /usr/local/unimrcp/lib/libmsc.so /usr/local/lib/
 
->1. Failed to Load DSO: /usr/local/unimrcp/lib/libmsc.so: undefined symbol: _ZTVN10__cxxabiv117__class_type_infoE
+>2. Failed to Load DSO: /usr/local/unimrcp/lib/libmsc.so: undefined symbol: _ZTVN10__cxxabiv117__class_type_infoE
 
    fix:[-lstdc++](https://www.jianshu.com/p/3286435124a2)
 
 
->2. ./unimrcpserver: error while loading shared libraries: libsofia-sip-ua.so.0: cannot open shared object file: No such file or directory
+>3. ./unimrcpserver: error while loading shared libraries: libsofia-sip-ua.so.0: cannot open shared object file: No such file or directory
 
 fix:
 
